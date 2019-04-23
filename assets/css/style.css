@@ -10,13 +10,23 @@ body {
   margin: 20px auto;
 }
 
+/* Solution to keeping the crystal divs square and responsive */
 .crystal {
   width: 30%;
   background: steelblue;
-  padding-bottom: 30%;
   margin: 1.66%;
   float: left;
   border-radius: 15%;
+}
+
+/* Solution to keeping the crystal divs square and responsive */
+.crystal:after {
+  background: steelblue;
+  padding-bottom: 100%;
+  margin: 1.66%;
+  border-radius: 15%;
+  display: block;
+  content: '';
 }
 
 h1 {
